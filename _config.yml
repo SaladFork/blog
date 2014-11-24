@@ -1,6 +1,8 @@
 encoding: utf-8
 highlighter: pygments
-# markdown: kramdown
+
+# Outputting
+permalink: none
 
 twitter_username: Elad
 github_username: SaladFork
