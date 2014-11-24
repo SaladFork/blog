@@ -1,10 +1,20 @@
-exclude: [run.rb]
+# Non-Jekyll Configuration
+twitter_username: Elad
+github_username: SaladFork
+url: "https://blog.eladshahar.com"
 
+# Handling Reading
+exclude: [run.rb]
 encoding: utf-8
-highlighter: pygments
 
 # Outputting
 permalink: none
 
-twitter_username: Elad
-github_username: SaladFork
+#Conversion
+markdown: kramdown
+highlighter: pygments
+
+kramdown:
+  input: GFM
+  use_coderay: true
+  syntax_highlighter: coderay
