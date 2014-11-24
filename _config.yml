@@ -2,6 +2,7 @@
 twitter_username: Elad
 github_username: SaladFork
 url: "https://blog.eladshahar.com"
+date_format: "%B %-d, %Y"
 
 # Handling Reading
 exclude: [run.rb]
@@ -18,3 +19,8 @@ kramdown:
   input: GFM
   use_coderay: true
   syntax_highlighter: coderay
+
+# Extra gems
+gems:
+  - jekyll-sitemap
+  - jemoji
