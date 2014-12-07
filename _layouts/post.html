@@ -8,9 +8,9 @@ layout: default
     <h1 class="post-title">{{ page.title | markdownify }}</h1>
 
     <p class="post-meta">
-        {{ page.date | date: site.date_format }} •
+        {{ page.date | date: site.date_format }}
         {% for tag in page.tags %}
-            <span class="tag tag-{{tag}}">{{ tag }}</strong>
+            <span class="tag tag-{{tag}}">{{ tag }}</span>
         {% endfor %}
     </p>
 

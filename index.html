@@ -4,27 +4,35 @@ layout: default
 
 <div class="home">
 
-    <h1 class="page-heading">Posts</h1>
+    <div class="into">
+    Hi. There will be an intro here soon...
+    </div>
+
+    <hr>
+
+    <h2 class="section-heading">Recent Posts</h2>
 
     <ul class="post-list">
         {% for post in site.posts %}
-        <li>
-            <span class="post-meta">
-                {{ post.date | date: site.date_format }} •
-                {% for tag in post.tags %}
-                    <span class="tag tag-{{tag}}">{{ tag }}</strong>
-                {% endfor %}
-                </span>
+            <li>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <span class="post-meta">
+                        {% for tag in post.tags %}
+                            <span class="tag tag-{{tag}}">{{ tag }}</span>
+                        {% endfor %}
+                        {{ post.date | date: site.date_format }}
+                    </span>
 
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | markdownify }}</a>
-                </h2>
+                    <span class="post-title">
+                        {{ post.title | markdownify }}
+                    </span>
+                </a>
 
+                <!--
                 <span>{{ post.excerpt }}</span>
+                -->
             </li>
-            {% endfor %}
-        </ul>
+        {% endfor %}
+    </ul>
 
-
-
-    </div>
+</div>

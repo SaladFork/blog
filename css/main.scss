@@ -11,11 +11,15 @@ $base-font-size:   15px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     45px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$top-bar-height:   56px;
+$top-icon-padding: ($top-bar-height - 20px)/2;
+
+$text-color:            #111;
+$background-color:      #fdfdfd;
+$background-color-dark: #333;
+$brand-color:           #2a7ae2;
 
 $code-border-radius: 3px;
 

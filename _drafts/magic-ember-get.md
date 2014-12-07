@@ -321,9 +321,9 @@ While it might lead to a useful and elegant design in [some situations](https://
 
 # Further Reading
 - Ember documentation:
-  - [Ember#get](http://emberjs.com/api/classes/Ember.html#method_get)
-  - [Ember.Observable#get](http://emberjs.com/api/classes/Ember.Observable.html#method_get)
-  - [Ember.Observable#getProperties](http://emberjs.com/api/classes/Ember.Observable.html#method_getProperties)
-  - [Ember.Observable#getWithDefault](http://emberjs.com/api/classes/Ember.Observable.html#method_getWithDefault)
+  - [Ember<wbr>#get](http://emberjs.com/api/classes/Ember.html#method_get)
+  - [Ember.Observable<wbr>#get](http://emberjs.com/api/classes/Ember.Observable.html#method_get)
+  - [Ember.Observable<wbr>#getProperties](http://emberjs.com/api/classes/Ember.Observable.html#method_getProperties)
+  - [Ember.Observable<wbr>#getWithDefault](http://emberjs.com/api/classes/Ember.Observable.html#method_getWithDefault)
 
 ---

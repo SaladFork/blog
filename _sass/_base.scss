@@ -19,9 +19,9 @@ body {
     line-height: $base-line-height;
     font-weight: 400;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     text-align: justify;
+    background: $background-color-dark;
 }
 
 /**
@@ -34,7 +34,9 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
+h1 {
+    margin-top: $spacing-unit;
+}
 
 /**
  * Images
@@ -198,7 +200,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: white;
         }
     }
 }
@@ -216,4 +218,26 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+
+/**
+ * Tags
+ */
+
+.tag {
+    padding: 1px 3px 1px 20px;
+    display: inline-block;
+    display: inline;
+    padding: 2px 7px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 3px;
+    margin: 0 5px;
+
+    &.tag-ember {
+        color: white;
+        background-color: #DB725D;
+    }
 }
