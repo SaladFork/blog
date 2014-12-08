@@ -7,7 +7,7 @@ tags: ember
 
 You've probably seen the `get` method in countless Ember examples and used it all over your code. How well do you really know it, though?
 
-_A quick disclaimer: below I will be referencing the [Ember guides](http://emberjs.com/guides/), the [Ember API](http://emberjs.com/api/), and the [Ember source code](https://github.com/emberjs/ember.js) including quoted snippets. These were copied at the time of writing (Ember 1.8.1) and may have changed since._
+_I will be referencing the [Ember guides](http://emberjs.com/guides/), the [Ember API](http://emberjs.com/api/), and the [Ember source code](https://github.com/emberjs/ember.js) including quoted snippets. These were copied at the time of writing (Ember 1.8.1) and may have changed since._
 
 ---
 
