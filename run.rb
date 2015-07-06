@@ -1,1 +1,1 @@
-`bundle exec jekyll serve --watch --drafts`
+exec('bundle exec jekyll serve --watch --drafts')
