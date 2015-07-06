@@ -12,7 +12,7 @@ include: [favicon.ico]
 encoding: utf-8
 
 # Outputting
-permalink: none
+permalink: ":title.html"
 
 #Conversion
 markdown: kramdown
