@@ -1,26 +1,23 @@
-/**
- * Site header
- */
+// Site header
 .site-header {
-    border-bottom: 1px solid black;
-    min-height: $top-bar-height;
-    background-color: $background-color-dark;
-    color: white;
-
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    min-height: $top-bar-height;
+    color: #fff;
+    background-color: $background-color-dark;
+    border-bottom: 1px solid #000;
 }
 
 .site-title {
-    font-size: 36px;
-    line-height: $top-bar-height;
-    letter-spacing: -1px;
-    margin-bottom: 0;
     float: left;
-    text-transform: uppercase;
-    font-weight: 100;
+    margin-bottom: 0;
     font-family: Roboto;
+    font-size: 36px;
+    font-weight: 100;
+    line-height: $top-bar-height;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 
     @include media-query($on-palm) {
         font-size: 24px;
@@ -33,8 +30,8 @@
     &,
     &:hover,
     &:visited {
-        color: white;
-        border-bottom: none;
+        color: #fff;
+        border-bottom: 0;
     }
 }
 
@@ -47,80 +44,30 @@
     }
 
     .page-link {
-        color: $text-color;
         line-height: $base-line-height;
+        color: $text-color;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
     }
-
-    /* Not using hamburger menu...
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-
-    */
 }
 
 
 
-/**
- * Site footer
- */
+// Site footer
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: ($spacing-unit/2) 0;
     color: #ccc;
     text-align: center;
+    border-top: 1px solid $grey-color-light;
 
     cite {
         font-family: 'Open Sans Condensed', $base-font-family;
+        font-size: 14px;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
 
         a {
             color: lighten(#1756a9, 50%);
@@ -130,17 +77,16 @@
 }
 
 
-/**
- * Social media list
- */
+// Social media list
 .contact-list,
 .social-media-list {
-    list-style: none;
     margin: 0;
+    list-style: none;
 
     .icon > svg {
         width: 32px;
         height: 32px;
+
         @include media-query($on-palm) {
             width: 16px;
             height: 16px;
@@ -156,20 +102,23 @@
     }
 
     a {
-        border-bottom: none;
         padding: $top-icon-padding 7px $top-icon-padding 10px;
+        border-bottom: 0;
+
         @include media-query($on-palm) {
-            padding-left: 4px;
             padding-right: 7px;
+            padding-left: 4px;
         }
     }
 
     .twitter a {
         &:focus,
         &:hover {
-            background-color: #44AEEE;
+            background-color: #44aeee;
+
+            // scss-lint:disable NestingDepth SelectorDepth
             svg path {
-                fill: whitesmoke;
+                fill: #f5f5f5;
             }
         }
     }
@@ -177,7 +126,9 @@
     .github a {
         &:focus,
         &:hover {
-            background-color: whitesmoke;
+            background-color: #f5f5f5;
+
+            // scss-lint:disable NestingDepth SelectorDepth
             svg path {
                 fill: #333;
             }
@@ -187,39 +138,17 @@
     .rss a {
         &:focus,
         &:hover {
-            background-color: #EE9644;
+            background-color: #ee9644;
+
+            // scss-lint:disable NestingDepth SelectorDepth
             svg path {
-                fill: whitesmoke;
+                fill: #f5f5f5;
             }
         }
     }
 }
 
-/* Not using hamburger menu...
-@include media-query($on-palm) {
-    .social-media-list {
-        color: $grey-color;
-
-        .username {
-            display: inline;
-        }
-        .icon > svg path {
-            fill: $grey-color;
-        }
-
-        li {
-            display: block;
-        }
-    }
-}
-*/
-
-
-
-
-/**
- * Page content
- */
+// Page content
 .page-content {
     padding: $spacing-unit 0;
     background-color: $background-color;
@@ -230,9 +159,9 @@
 }
 
 .section-heading {
-    text-transform: uppercase;
     font-size: 13px;
     color: #999;
+    text-transform: uppercase;
 }
 
 .post-list {
@@ -241,12 +170,12 @@
 
     a,
     a:hover {
-        border-bottom: 0;
         padding: 7px 3px;
+        border-bottom: 0;
     }
 
-    li:nth-child(even) a{
-        background-color: whitesmoke;
+    li:nth-child(even) a {
+        background-color: #f5f5f5;
     }
 
     .post-meta {
@@ -265,8 +194,8 @@
 
 @include media-query($on-palm) {
     .post-list .post-meta {
-        float: none;
         display: block;
+        float: none;
         margin-left: 0;
 
         .tag,
@@ -277,13 +206,13 @@
 }
 
 .post-meta {
+    padding-top: 5px;
+    margin-left: 5px;
+    font-family: Roboto;
     font-size: $small-font-size;
+    font-weight: 300;
     color: #999;
     text-transform: uppercase;
-    padding-top: 5px;
-    font-family: Roboto;
-    font-weight: 300;
-    margin-left: 5px;
 
     .tag {
         text-transform: none;
@@ -294,32 +223,31 @@
     display: block;
     text-align: left;
 
-    h2 {
-        margin-bottom: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+    &:hover,
+    &:active {
+        border-right-color: #5c5c5c;
+        border-left-color: #5c5c5c;
     }
 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-
-    &:hover {
-        border-left-color: #5c5c5c;
-        border-right-color:#5c5c5c;
+    h2 {
+        margin-bottom: 0;
     }
 }
 
 
 
-/**
- * Posts
- */
+// Posts
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
+    font-size: 36px;
     line-height: 1;
+    letter-spacing: -1px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -330,14 +258,6 @@
     margin-bottom: $spacing-unit;
 
     h1 {
-        font-size: 36px;
-
-        @include media-query($on-laptop) {
-            font-size: 32px;
-        }
-    }
-
-    h2 {
         font-size: 32px;
 
         @include media-query($on-laptop) {
@@ -345,19 +265,27 @@
         }
     }
 
-    h3 {
-        font-size: 26px;
+    h2 {
+        font-size: 28px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
         }
     }
 
-    h4 {
-        font-size: 20px;
+    h3 {
+        font-size: 22px;
 
         @include media-query($on-laptop) {
             font-size: 18px;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+
+        @include media-query($on-laptop) {
+            font-size: 16px;
         }
     }
 }
