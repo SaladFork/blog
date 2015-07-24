@@ -61,6 +61,7 @@
     padding: ($spacing-unit/2) 0;
     color: #ccc;
     text-align: center;
+    background-color: $background-color-dark;
     border-top: 1px solid $grey-color-light;
 
     cite {
@@ -246,7 +247,7 @@
 
 .post-title {
     font-size: 36px;
-    line-height: 1;
+    line-height: 1.5;
     letter-spacing: -1px;
 
     @include media-query($on-laptop) {

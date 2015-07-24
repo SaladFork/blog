@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     color: $text-color;
     -webkit-text-size-adjust: 100%;
-    background: $background-color-dark;
+    background: $background-color;
 }
 
 /**
@@ -31,10 +31,6 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-}
-
-h1 {
-    margin-top: $spacing-unit;
 }
 
 /**
